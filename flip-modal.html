@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="box">
+    <a class="open">Click</a>
+    <div class="content">
+        <h1>lorem text</h1>
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quia! Labore assumenda consequatur dolores rem quod impedit aliquid cupiditate officiis modi nulla explicabo officia unde magnam minus, facilis dolor molestiae.
+        Adipisci aliquam saepe amet error iusto, illum alias excepturi, reiciendis impedit ullam aut minus quas neque corporis? Quia harum officia similique, possimus debitis laborum minus, optio odio illo, ullam voluptates.
+        Totam nihil rem excepturi illo incidunt. Fuga rem, sapiente sint mollitia dolores corporis fugiat, quod nemo expedita ab molestiae fugit consequuntur impedit ut, eum officia ea quibusdam quos vitae repudiandae?</p>
+        <a class="close">Close</a>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('a.open').click(function(){
+        $('.content').addClass('active');
+    });
+    $('a.close').click(function(){
+        $('.content').removeClass('active');
+    });
+});
+</script>
+    
+</body>
+</html>
